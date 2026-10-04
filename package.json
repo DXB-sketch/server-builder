@@ -1,0 +1,20 @@
+{
+  "name": "monolith-server-builder",
+  "version": "1.0.0",
+  "description": "Locally hosted Discord bot + web control panel that builds and manages the MONOLITH CREATIONS Discord servers from templates.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}

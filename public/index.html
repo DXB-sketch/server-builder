@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MONOLITH Server Builder</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='11' y='2' width='10' height='28' rx='2' fill='%238b5cf6'/></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside id="side">
+    <div class="brand"><span class="mono-logo"></span><b>MONOLITH</b><small>SERVER BUILDER</small></div>
+    <nav id="nav"></nav>
+  </aside>
+  <header id="top">
+    <h1 id="title">Dashboard</h1>
+    <select id="guildPick" title="Server the panel is managing"></select>
+    <span class="pill" id="botPill"><span class="dot"></span><span>Connecting…</span></span>
+  </header>
+  <main id="main"></main>
+  <section id="console" class="collapsed">
+    <header id="consoleHead"><b>Console</b><span id="lastLog" class="grow muted"></span><span>▲</span></header>
+    <div id="logBox"></div>
+  </section>
+  <div id="toasts"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1047 @@
+{
+  "name": "Balloon Pump — Game Server",
+  "description": "The Balloon Pump game server: verification, news, update log, codes, game chat, bug-report & suggestion forums, support, voice, QA testing and staff areas.",
+  "guildEnv": "GAME_GUILD_ID",
+  "accent": "#FF4D6D",
+  "settings": {
+    "name": "Balloon Pump",
+    "description": "The official Discord for Balloon Pump 🎈 by MONOLITH CREATIONS — codes, updates, bug reports and more.",
+    "verificationLevel": "Medium",
+    "defaultMessageNotifications": "OnlyMentions",
+    "explicitContentFilter": "AllMembers",
+    "community": true,
+    "rulesChannel": "rules",
+    "publicUpdatesChannel": "mod-updates",
+    "safetyAlertsChannel": "mod-log",
+    "systemChannel": "mod-log",
+    "systemChannelFlags": [
+      "SuppressJoinNotificationReplies"
+    ],
+    "afkChannel": "💤 AFK",
+    "afkTimeout": 900,
+    "preferredLocale": "en-US",
+    "premiumProgressBarEnabled": true
+  },
+  "everyone": {
+    "permissions": [
+      "ReadMessageHistory",
+      "SendMessages",
+      "SendMessagesInThreads",
+      "CreatePublicThreads",
+      "EmbedLinks",
+      "AttachFiles",
+      "AddReactions",
+      "UseExternalEmojis",
+      "UseExternalStickers",
+      "UseApplicationCommands",
+      "UseExternalApps",
+      "SendVoiceMessages",
+      "SendPolls",
+      "Connect",
+      "Speak",
+      "Stream",
+      "UseVAD",
+      "UseEmbeddedActivities",
+      "UseSoundboard",
+      "UseExternalSounds",
+      "RequestToSpeak",
+      "ChangeNickname",
+      "CreateInstantInvite"
+    ]
+  },
+  "roles": [
+    {
+      "name": "Founder",
+      "color": "#F1C40F",
+      "hoist": true,
+      "permissions": [
+        "Administrator"
+      ]
+    },
+    {
+      "name": "Developer",
+      "color": "#2ECC71",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "MentionEveryone",
+        "ManageEvents",
+        "CreateEvents",
+        "ViewAuditLog",
+        "BypassSlowmode",
+        "ModerateMembers",
+        "KickMembers",
+        "BanMembers"
+      ]
+    },
+    {
+      "name": "Head Moderator",
+      "color": "#E74C3C",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "KickMembers",
+        "BanMembers",
+        "ModerateMembers",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "ManageNicknames",
+        "MuteMembers",
+        "DeafenMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "PrioritySpeaker",
+        "BypassSlowmode",
+        "ManageChannels",
+        "ManageRoles",
+        "ManageEvents",
+        "CreateEvents",
+        "ManageGuildExpressions",
+        "CreateGuildExpressions",
+        "MentionEveryone",
+        "ManageWebhooks"
+      ]
+    },
+    {
+      "name": "Moderator",
+      "color": "#FF6B6B",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "KickMembers",
+        "BanMembers",
+        "ModerateMembers",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "ManageNicknames",
+        "MuteMembers",
+        "DeafenMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "PrioritySpeaker",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Trial Moderator",
+      "color": "#FFA3A3",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ModerateMembers",
+        "ManageMessages",
+        "ManageThreads",
+        "MuteMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "QA Tester",
+      "color": "#1ABC9C",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Content Creator",
+      "color": "#FF0050",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "🏆 Pump Legend",
+      "color": "#FF4D6D",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "💎 VIP",
+      "color": "#FFD700",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "🎈 Early Supporter",
+      "color": "#FF8FA3",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Player",
+      "color": "#B9BBBE",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "🎈 Update Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎟️ Codes Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎉 Events Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎁 Giveaways Ping",
+      "permissions": []
+    },
+    {
+      "name": "👀 Sneak Peeks Ping",
+      "permissions": []
+    }
+  ],
+  "categories": [
+    {
+      "name": "🎈 WELCOME",
+      "permissions": {
+        "@everyone": {
+          "allow": [
+            "ViewChannel",
+            "ReadMessageHistory"
+          ],
+          "deny": [
+            "SendMessages",
+            "CreatePublicThreads",
+            "CreatePrivateThreads",
+            "SendMessagesInThreads",
+            "AddReactions"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "welcome",
+          "topic": "Welcome to the official Balloon Pump Discord! 🎈"
+        },
+        {
+          "name": "rules",
+          "topic": "Read these before chatting."
+        },
+        {
+          "name": "verify",
+          "topic": "Press the button to unlock the server ✅"
+        },
+        {
+          "name": "get-roles",
+          "topic": "Choose your pings 🔔",
+          "permissions": {
+            "@everyone": {
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            "Player": {
+              "allow": [
+                "ViewChannel"
+              ]
+            }
+          }
+        },
+        {
+          "name": "faq",
+          "topic": "Common questions about Balloon Pump"
+        }
+      ]
+    },
+    {
+      "name": "📣 NEWS",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "SendMessages",
+            "CreatePublicThreads",
+            "CreatePrivateThreads",
+            "SendMessagesInThreads",
+            "AddReactions"
+          ]
+        },
+        "Developer": {
+          "allow": [
+            "SendMessages",
+            "MentionEveryone"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "announcements",
+          "type": "announcement",
+          "topic": "Official Balloon Pump announcements 📢"
+        },
+        {
+          "name": "update-log",
+          "type": "announcement",
+          "topic": "Patch notes for every update 🛠️"
+        },
+        {
+          "name": "codes",
+          "type": "announcement",
+          "topic": "Active Balloon Pump codes 🎟️ — get the Codes Ping role to never miss one!"
+        },
+        {
+          "name": "sneak-peeks",
+          "topic": "Upcoming features 👀"
+        },
+        {
+          "name": "events",
+          "type": "announcement",
+          "topic": "In-game events & community events 🎉"
+        },
+        {
+          "name": "giveaways",
+          "topic": "Giveaways 🎁"
+        }
+      ]
+    },
+    {
+      "name": "🎈 BALLOON PUMP",
+      "channels": [
+        {
+          "name": "general",
+          "topic": "Talk about Balloon Pump! 🎈",
+          "slowmode": 2
+        },
+        {
+          "name": "tips-and-strategies",
+          "topic": "Share the best ways to pump, pop and progress 🧠",
+          "slowmode": 5
+        },
+        {
+          "name": "high-scores",
+          "topic": "Show off your best runs 🏆 (screenshots required)",
+          "slowmode": 15
+        },
+        {
+          "name": "screenshots-and-clips",
+          "topic": "Your best Balloon Pump moments 📸",
+          "slowmode": 10
+        },
+        {
+          "name": "fan-art",
+          "topic": "Balloon Pump fan art 🎨",
+          "slowmode": 10
+        },
+        {
+          "name": "off-topic",
+          "topic": "Anything else"
+        },
+        {
+          "name": "bot-commands",
+          "topic": "Use bot commands here 🤖"
+        }
+      ]
+    },
+    {
+      "name": "💡 FEEDBACK",
+      "channels": [
+        {
+          "name": "bug-reports",
+          "type": "forum",
+          "topic": "Found a bug? One post per bug.\n\n**Include:** what happened, what you expected, steps to reproduce, your device (PC / Mobile / Console / Tablet) and a screenshot or video if possible.\n\n⚠️ Report exploits privately in a Help post, NOT here.",
+          "tags": [
+            {
+              "name": "Gameplay",
+              "emoji": "🎈"
+            },
+            {
+              "name": "UI",
+              "emoji": "🖼️"
+            },
+            {
+              "name": "Purchases",
+              "emoji": "💰"
+            },
+            {
+              "name": "Crash / Lag",
+              "emoji": "💥"
+            },
+            {
+              "name": "PC",
+              "emoji": "💻"
+            },
+            {
+              "name": "Mobile",
+              "emoji": "📱"
+            },
+            {
+              "name": "Console",
+              "emoji": "🎮"
+            },
+            {
+              "name": "Investigating",
+              "emoji": "🔍",
+              "moderated": true
+            },
+            {
+              "name": "Fixed",
+              "emoji": "✅",
+              "moderated": true
+            },
+            {
+              "name": "Duplicate",
+              "emoji": "♻️",
+              "moderated": true
+            },
+            {
+              "name": "Not a Bug",
+              "emoji": "❌",
+              "moderated": true
+            }
+          ],
+          "defaultReaction": "👀",
+          "sortOrder": "CreationDate"
+        },
+        {
+          "name": "suggestions",
+          "type": "forum",
+          "topic": "Suggest ideas for Balloon Pump! One idea per post. Search first to avoid duplicates. 👍 the ideas you like.",
+          "tags": [
+            {
+              "name": "Gameplay",
+              "emoji": "🎈"
+            },
+            {
+              "name": "Balloons",
+              "emoji": "🎈"
+            },
+            {
+              "name": "Upgrades",
+              "emoji": "⬆️"
+            },
+            {
+              "name": "UI",
+              "emoji": "🖼️"
+            },
+            {
+              "name": "Quality of Life",
+              "emoji": "✨"
+            },
+            {
+              "name": "Planned",
+              "emoji": "🛠️",
+              "moderated": true
+            },
+            {
+              "name": "Added",
+              "emoji": "✅",
+              "moderated": true
+            },
+            {
+              "name": "Denied",
+              "emoji": "❌",
+              "moderated": true
+            }
+          ],
+          "defaultReaction": "👍"
+        },
+        {
+          "name": "feedback",
+          "topic": "General feedback about the game 💬",
+          "slowmode": 30
+        }
+      ]
+    },
+    {
+      "name": "🆘 SUPPORT",
+      "channels": [
+        {
+          "name": "how-to-get-help",
+          "topic": "Read before opening a post",
+          "permissions": {
+            "@everyone": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "help",
+          "type": "forum",
+          "topic": "Get help from staff. Open one post per issue.",
+          "tags": [
+            {
+              "name": "Question",
+              "emoji": "❓"
+            },
+            {
+              "name": "Purchase Issue",
+              "emoji": "💰"
+            },
+            {
+              "name": "Lost Progress",
+              "emoji": "💾"
+            },
+            {
+              "name": "Report Exploiter",
+              "emoji": "🚩"
+            },
+            {
+              "name": "Appeal",
+              "emoji": "⚖️"
+            },
+            {
+              "name": "Resolved",
+              "emoji": "✅",
+              "moderated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🔊 VOICE",
+      "channels": [
+        {
+          "name": "🎤 Game Events",
+          "type": "stage"
+        },
+        {
+          "name": "🎈 Pump Lounge",
+          "type": "voice"
+        },
+        {
+          "name": "🎮 Squad 1",
+          "type": "voice",
+          "userLimit": 4
+        },
+        {
+          "name": "🎮 Squad 2",
+          "type": "voice",
+          "userLimit": 4
+        },
+        {
+          "name": "💤 AFK",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "🧪 TESTING",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        "QA Tester": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Developer": {
+          "allow": [
+            "ViewChannel"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "tester-info",
+          "topic": "Read me first — testing rules & NDA",
+          "permissions": {
+            "QA Tester": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "test-builds",
+          "topic": "Links to test places & what to test",
+          "permissions": {
+            "QA Tester": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "tester-chat",
+          "topic": "Tester discussion"
+        },
+        {
+          "name": "tester-bugs",
+          "topic": "Bugs found in test builds 🐞"
+        },
+        {
+          "name": "🧪 Testing VC",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "🛡️ STAFF",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        "Developer": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Head Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Trial Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "staff-chat",
+          "topic": "Staff discussion"
+        },
+        {
+          "name": "staff-commands",
+          "topic": "Moderation bot commands"
+        },
+        {
+          "name": "exploit-reports",
+          "topic": "Confirmed exploiters, ban evidence & ban list"
+        },
+        {
+          "name": "mod-log",
+          "topic": "Automatic logs: joins, leaves, deletes, bans, AutoMod alerts"
+        },
+        {
+          "name": "mod-updates",
+          "topic": "Discord community updates (required for Community servers)"
+        },
+        {
+          "name": "🛡️ Staff VC",
+          "type": "voice"
+        }
+      ]
+    }
+  ],
+  "welcomeScreen": {
+    "description": "The official Balloon Pump Discord by MONOLITH CREATIONS 🎈",
+    "channels": [
+      {
+        "channel": "rules",
+        "description": "Read the rules",
+        "emoji": "📜"
+      },
+      {
+        "channel": "verify",
+        "description": "Verify to start chatting",
+        "emoji": "✅"
+      },
+      {
+        "channel": "codes",
+        "description": "Free in-game rewards",
+        "emoji": "🎟️"
+      },
+      {
+        "channel": "update-log",
+        "description": "What's new",
+        "emoji": "🛠️"
+      },
+      {
+        "channel": "bug-reports",
+        "description": "Report a bug",
+        "emoji": "🐞"
+      }
+    ]
+  },
+  "automod": [
+    {
+      "name": "Block slurs & sexual content",
+      "trigger": "KeywordPreset",
+      "metadata": {
+        "presets": [
+          "Profanity",
+          "SexualContent",
+          "Slurs"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Please keep chat friendly — that message was blocked."
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Developer",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator"
+      ]
+    },
+    {
+      "name": "Scam & free Robux links",
+      "trigger": "Keyword",
+      "metadata": {
+        "keywords": [
+          "free robux",
+          "*robux generator*",
+          "robux hack*",
+          "*freerobux*",
+          "free nitro",
+          "*nitro giveaway*",
+          "*grabify*",
+          "*iplogger*",
+          "*rbxflip*",
+          "*bloxflip*"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Scam / fake-Robux content is not allowed."
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        },
+        {
+          "type": "Timeout",
+          "seconds": 600
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Developer",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator"
+      ]
+    },
+    {
+      "name": "Discord invite links",
+      "trigger": "Keyword",
+      "metadata": {
+        "regex": [
+          "discord(?:\\.gg|(?:app)?\\.com/invite)/[a-zA-Z0-9-]+"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Posting server invites isn't allowed here."
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Developer",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator"
+      ]
+    },
+    {
+      "name": "Mention spam",
+      "trigger": "MentionSpam",
+      "metadata": {
+        "mentionLimit": 6,
+        "raidProtection": true
+      },
+      "actions": [
+        {
+          "type": "BlockMessage"
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        },
+        {
+          "type": "Timeout",
+          "seconds": 600
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Developer",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator"
+      ]
+    },
+    {
+      "name": "Spam filter",
+      "trigger": "Spam",
+      "actions": [
+        {
+          "type": "BlockMessage"
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Developer",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator"
+      ]
+    }
+  ],
+  "bot": {
+    "welcome": {
+      "enabled": true,
+      "channel": "welcome",
+      "embed": true,
+      "color": "#FF4D6D",
+      "title": "A new pumper has arrived! 🎈",
+      "message": "Welcome {user} to **{server}**! You're member **#{count}**.\n\n📜 Read {{channel:rules}}\n✅ Verify in {{channel:verify}}\n🎟️ Grab the latest {{channel:codes}}"
+    },
+    "goodbye": {
+      "enabled": false,
+      "channel": "mod-log",
+      "message": "**{username}** left the server."
+    },
+    "autoRoles": [],
+    "logChannel": "mod-log"
+  },
+  "messages": [
+    {
+      "key": "welcome",
+      "channel": "welcome",
+      "embeds": [
+        {
+          "title": "🎈 Welcome to Balloon Pump!",
+          "color": "#FF4D6D",
+          "description": "This is the official Discord server for **Balloon Pump**, made by **MONOLITH CREATIONS**.\n\n**Get started**\n1️⃣ Read the {{channel:rules}}\n2️⃣ Verify in {{channel:verify}}\n3️⃣ Pick your pings in {{channel:get-roles}}\n4️⃣ Grab the latest {{channel:codes}} 🎟️",
+          "fields": [
+            {
+              "name": "🐞 Found a bug?",
+              "value": "Post it in {{channel:bug-reports}}",
+              "inline": true
+            },
+            {
+              "name": "💡 Got an idea?",
+              "value": "Post it in {{channel:suggestions}}",
+              "inline": true
+            },
+            {
+              "name": "🆘 Need help?",
+              "value": "Open a post in {{channel:help}}",
+              "inline": true
+            }
+          ],
+          "footer": {
+            "text": "Balloon Pump • MONOLITH CREATIONS"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Play Balloon Pump",
+          "emoji": "🎮",
+          "url": "{{env.BALLOON_PUMP_URL}}"
+        },
+        {
+          "label": "Roblox Group",
+          "emoji": "👥",
+          "url": "{{env.ROBLOX_GROUP_URL}}"
+        },
+        {
+          "label": "MONOLITH Community",
+          "emoji": "🗿",
+          "url": "{{env.COMMUNITY_DISCORD_INVITE}}"
+        }
+      ]
+    },
+    {
+      "key": "rules",
+      "channel": "rules",
+      "embeds": [
+        {
+          "title": "📜 Rules",
+          "color": "#FF4D6D",
+          "description": "**1. Be kind.** No harassment, hate speech, bullying or drama.\n\n**2. Keep it family-friendly.** No NSFW, gore or inappropriate names/avatars.\n\n**3. No spam or mass pings.**\n\n**4. No scams.** No fake Robux/Nitro links, account selling or begging.\n\n**5. No exploiting.** Don't share, sell or brag about exploits. Report exploiters with proof in a {{channel:help}} post → **Report Exploiter**. Exploiting in-game = permanent game ban.\n\n**6. No advertising** other servers or games without permission.\n\n**7. Use the right channels** — bugs in {{channel:bug-reports}}, ideas in {{channel:suggestions}}.\n\n**8. Respect staff decisions.** Appeals go in {{channel:help}}.\n\n**9. Follow the Discord ToS and Roblox Community Standards.**",
+          "footer": {
+            "text": "Breaking the rules can lead to a warning, timeout, kick or ban."
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Discord Terms",
+          "url": "https://discord.com/terms"
+        },
+        {
+          "label": "Roblox Community Standards",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/203313410"
+        }
+      ]
+    },
+    {
+      "key": "verify",
+      "channel": "verify",
+      "embeds": [
+        {
+          "title": "✅ Verify",
+          "color": "#57F287",
+          "description": "Press **Verify** to confirm you've read the {{channel:rules}} and unlock the server. 🎈"
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Verify",
+          "emoji": "✅",
+          "style": "Success",
+          "role": "Player",
+          "mode": "add"
+        }
+      ]
+    },
+    {
+      "key": "roles",
+      "channel": "get-roles",
+      "embeds": [
+        {
+          "title": "🔔 Ping Roles",
+          "color": "#FF4D6D",
+          "description": "Click to get or remove a role.\n\n🎈 **Updates** — new game updates\n🎟️ **Codes** — new codes the moment they drop\n🎉 **Events** — in-game & community events\n🎁 **Giveaways**\n👀 **Sneak Peeks**"
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Updates",
+          "emoji": "🎈",
+          "role": "🎈 Update Ping"
+        },
+        {
+          "label": "Codes",
+          "emoji": "🎟️",
+          "role": "🎟️ Codes Ping",
+          "style": "Success"
+        },
+        {
+          "label": "Events",
+          "emoji": "🎉",
+          "role": "🎉 Events Ping"
+        },
+        {
+          "label": "Giveaways",
+          "emoji": "🎁",
+          "role": "🎁 Giveaways Ping"
+        },
+        {
+          "label": "Sneak Peeks",
+          "emoji": "👀",
+          "role": "👀 Sneak Peeks Ping"
+        }
+      ]
+    },
+    {
+      "key": "faq",
+      "channel": "faq",
+      "embeds": [
+        {
+          "title": "❓ Balloon Pump FAQ",
+          "color": "#FF4D6D",
+          "fields": [
+            {
+              "name": "How do I play?",
+              "value": "Pump your balloon, pop it at the right moment and use your rewards to upgrade. Click **Play** in {{channel:welcome}}."
+            },
+            {
+              "name": "Are there codes?",
+              "value": "Yes! All active codes are in {{channel:codes}}. Get the 🎟️ Codes Ping in {{channel:get-roles}} to be notified."
+            },
+            {
+              "name": "When is the next update?",
+              "value": "Watch {{channel:sneak-peeks}} and {{channel:update-log}}. We don't give exact dates until they're ready."
+            },
+            {
+              "name": "I lost my progress / a purchase didn't work",
+              "value": "Open a {{channel:help}} post with the **Lost Progress** or **Purchase Issue** tag and include your Roblox username."
+            },
+            {
+              "name": "How do I become a tester?",
+              "value": "Tester applications are announced in {{channel:announcements}}."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "help",
+      "channel": "how-to-get-help",
+      "embeds": [
+        {
+          "title": "🆘 How to get help",
+          "color": "#FF4D6D",
+          "description": "Open a post in {{channel:help}} and pick the right tag:\n\n❓ **Question**\n💰 **Purchase Issue** — include your Roblox username + what you bought\n💾 **Lost Progress** — include your Roblox username + what's missing\n🚩 **Report Exploiter** — Roblox username + video proof\n⚖️ **Appeal** — appeal a Discord punishment\n\nFor bugs use {{channel:bug-reports}} instead. Please don't DM staff or developers."
+        }
+      ]
+    },
+    {
+      "key": "codes",
+      "channel": "codes",
+      "embeds": [
+        {
+          "title": "🎟️ Active Codes",
+          "color": "#FFD700",
+          "description": "New codes are posted here first! Redeem them in-game from the **Codes** menu.\n\nTurn on the 🎟️ Codes Ping in {{channel:get-roles}} so you never miss one."
+        }
+      ]
+    },
+    {
+      "key": "tester",
+      "channel": "tester-info",
+      "embeds": [
+        {
+          "title": "🧪 Welcome, Testers!",
+          "color": "#1ABC9C",
+          "description": "**1.** Everything in this category is confidential — no leaks, screenshots or clips outside it.\n**2.** Test builds are posted in {{channel:test-builds}} with what to focus on.\n**3.** Report bugs in {{channel:tester-bugs}} with steps to reproduce, device and a clip.\n**4.** Be honest — negative feedback helps us most.\n\nLeaking = immediate removal from the tester team."
+        }
+      ]
+    }
+  ]
+}

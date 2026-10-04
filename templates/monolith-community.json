@@ -1,0 +1,1212 @@
+{
+  "name": "MONOLITH CREATIONS — Community",
+  "description": "The main MONOLITH CREATIONS community server: verification, announcements, our games, community chat, creations showcase, support, voice, staff and dev-team areas.",
+  "guildEnv": "COMMUNITY_GUILD_ID",
+  "accent": "#8B5CF6",
+  "settings": {
+    "name": "MONOLITH CREATIONS",
+    "description": "The official community of MONOLITH CREATIONS — the Roblox studio behind Balloon Pump.",
+    "verificationLevel": "Medium",
+    "defaultMessageNotifications": "OnlyMentions",
+    "explicitContentFilter": "AllMembers",
+    "community": true,
+    "rulesChannel": "rules",
+    "publicUpdatesChannel": "mod-updates",
+    "safetyAlertsChannel": "mod-log",
+    "systemChannel": "mod-log",
+    "systemChannelFlags": [
+      "SuppressJoinNotificationReplies"
+    ],
+    "afkChannel": "💤 AFK",
+    "afkTimeout": 900,
+    "preferredLocale": "en-US",
+    "premiumProgressBarEnabled": true
+  },
+  "everyone": {
+    "permissions": [
+      "ReadMessageHistory",
+      "SendMessages",
+      "SendMessagesInThreads",
+      "CreatePublicThreads",
+      "EmbedLinks",
+      "AttachFiles",
+      "AddReactions",
+      "UseExternalEmojis",
+      "UseExternalStickers",
+      "UseApplicationCommands",
+      "UseExternalApps",
+      "SendVoiceMessages",
+      "SendPolls",
+      "Connect",
+      "Speak",
+      "Stream",
+      "UseVAD",
+      "UseEmbeddedActivities",
+      "UseSoundboard",
+      "UseExternalSounds",
+      "RequestToSpeak",
+      "ChangeNickname",
+      "CreateInstantInvite"
+    ]
+  },
+  "roles": [
+    {
+      "name": "Founder",
+      "color": "#F1C40F",
+      "hoist": true,
+      "permissions": [
+        "Administrator"
+      ]
+    },
+    {
+      "name": "Executive",
+      "color": "#E67E22",
+      "hoist": true,
+      "permissions": [
+        "Administrator"
+      ]
+    },
+    {
+      "name": "Head Moderator",
+      "color": "#E74C3C",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "KickMembers",
+        "BanMembers",
+        "ModerateMembers",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "ManageNicknames",
+        "MuteMembers",
+        "DeafenMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "PrioritySpeaker",
+        "BypassSlowmode",
+        "ManageChannels",
+        "ManageRoles",
+        "ManageEvents",
+        "CreateEvents",
+        "ManageGuildExpressions",
+        "CreateGuildExpressions",
+        "MentionEveryone",
+        "ManageWebhooks"
+      ]
+    },
+    {
+      "name": "Moderator",
+      "color": "#FF6B6B",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "KickMembers",
+        "BanMembers",
+        "ModerateMembers",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "ManageNicknames",
+        "MuteMembers",
+        "DeafenMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "PrioritySpeaker",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Trial Moderator",
+      "color": "#FFA3A3",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ModerateMembers",
+        "ManageMessages",
+        "ManageThreads",
+        "MuteMembers",
+        "MoveMembers",
+        "ViewAuditLog",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Community Manager",
+      "color": "#9B59B6",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ManageEvents",
+        "CreateEvents",
+        "MentionEveryone",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Lead Developer",
+      "color": "#1ABC9C",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "MentionEveryone",
+        "ManageEvents",
+        "CreateEvents",
+        "ViewAuditLog",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Developer",
+      "color": "#2ECC71",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel",
+        "ManageMessages",
+        "PinMessages",
+        "ManageThreads",
+        "MentionEveryone",
+        "ManageEvents",
+        "CreateEvents",
+        "ViewAuditLog",
+        "BypassSlowmode"
+      ]
+    },
+    {
+      "name": "Builder",
+      "color": "#3498DB",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Scripter",
+      "color": "#5DADE2",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Modeler",
+      "color": "#48C9B0",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "UI Designer",
+      "color": "#AF7AC5",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Animator",
+      "color": "#F5B7B1",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Content Creator",
+      "color": "#FF0050",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Partner",
+      "color": "#00BCD4",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Beta Tester",
+      "color": "#95A5A6",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "VIP",
+      "color": "#8B5CF6",
+      "hoist": true,
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "Member",
+      "color": "#B9BBBE",
+      "permissions": [
+        "ViewChannel"
+      ]
+    },
+    {
+      "name": "📢 Announcements Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎈 Game Updates Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎉 Events Ping",
+      "permissions": []
+    },
+    {
+      "name": "🎁 Giveaways Ping",
+      "permissions": []
+    },
+    {
+      "name": "👀 Sneak Peeks Ping",
+      "permissions": []
+    }
+  ],
+  "categories": [
+    {
+      "name": "📌 START HERE",
+      "permissions": {
+        "@everyone": {
+          "allow": [
+            "ViewChannel",
+            "ReadMessageHistory"
+          ],
+          "deny": [
+            "SendMessages",
+            "CreatePublicThreads",
+            "CreatePrivateThreads",
+            "SendMessagesInThreads",
+            "AddReactions"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "welcome",
+          "topic": "Welcome to MONOLITH CREATIONS! 👋"
+        },
+        {
+          "name": "rules",
+          "topic": "Read these before chatting. Breaking them = warnings, timeouts or bans."
+        },
+        {
+          "name": "verify",
+          "topic": "Press the button to unlock the server ✅"
+        },
+        {
+          "name": "get-roles",
+          "topic": "Choose which pings you want 🔔",
+          "permissions": {
+            "@everyone": {
+              "deny": [
+                "ViewChannel"
+              ]
+            },
+            "Member": {
+              "allow": [
+                "ViewChannel"
+              ]
+            }
+          }
+        },
+        {
+          "name": "faq",
+          "topic": "Frequently asked questions"
+        }
+      ]
+    },
+    {
+      "name": "📢 ANNOUNCEMENTS",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "SendMessages",
+            "CreatePublicThreads",
+            "CreatePrivateThreads",
+            "SendMessagesInThreads",
+            "AddReactions"
+          ]
+        },
+        "Community Manager": {
+          "allow": [
+            "SendMessages",
+            "MentionEveryone"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "announcements",
+          "type": "announcement",
+          "topic": "Official MONOLITH CREATIONS news. Get pinged with the 📢 Announcements Ping role."
+        },
+        {
+          "name": "game-updates",
+          "type": "announcement",
+          "topic": "Update logs for all our games 🎈"
+        },
+        {
+          "name": "sneak-peeks",
+          "topic": "Early looks at what we're building 👀"
+        },
+        {
+          "name": "events",
+          "type": "announcement",
+          "topic": "Community events, game nights and contests 🎉"
+        },
+        {
+          "name": "giveaways",
+          "topic": "Robux, game passes and more 🎁"
+        }
+      ]
+    },
+    {
+      "name": "🎮 OUR GAMES",
+      "channels": [
+        {
+          "name": "our-games",
+          "topic": "Every MONOLITH CREATIONS game, with links",
+          "permissions": {
+            "@everyone": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "balloon-pump-chat",
+          "topic": "Talk about Balloon Pump 🎈 — for bug reports & suggestions use the Balloon Pump server!",
+          "slowmode": 3
+        }
+      ]
+    },
+    {
+      "name": "💬 COMMUNITY",
+      "channels": [
+        {
+          "name": "general",
+          "topic": "Main chat — keep it friendly!",
+          "slowmode": 2
+        },
+        {
+          "name": "introductions",
+          "topic": "Say hi and tell us about yourself 👋",
+          "slowmode": 60
+        },
+        {
+          "name": "roblox-chat",
+          "topic": "Anything Roblox"
+        },
+        {
+          "name": "media",
+          "topic": "Screenshots, clips & videos 📸",
+          "slowmode": 10
+        },
+        {
+          "name": "memes",
+          "topic": "Keep them clean 😂",
+          "slowmode": 5
+        },
+        {
+          "name": "off-topic",
+          "topic": "Anything that doesn't fit elsewhere"
+        },
+        {
+          "name": "bot-commands",
+          "topic": "Use bot commands here 🤖"
+        }
+      ]
+    },
+    {
+      "name": "🛠️ CREATIONS",
+      "channels": [
+        {
+          "name": "creations",
+          "type": "forum",
+          "topic": "Show off your Roblox builds, scripts, models, UI and art! One post per creation.",
+          "tags": [
+            {
+              "name": "Build",
+              "emoji": "🧱"
+            },
+            {
+              "name": "Script",
+              "emoji": "📜"
+            },
+            {
+              "name": "Model",
+              "emoji": "🗿"
+            },
+            {
+              "name": "UI",
+              "emoji": "🖼️"
+            },
+            {
+              "name": "Animation",
+              "emoji": "🎞️"
+            },
+            {
+              "name": "Art",
+              "emoji": "🎨"
+            }
+          ],
+          "defaultReaction": "🔥",
+          "layout": "GalleryView"
+        },
+        {
+          "name": "dev-help",
+          "type": "forum",
+          "topic": "Stuck on Roblox Studio? Ask here. Include code / screenshots and mark your post Solved when done.",
+          "tags": [
+            {
+              "name": "Scripting",
+              "emoji": "📜"
+            },
+            {
+              "name": "Building",
+              "emoji": "🧱"
+            },
+            {
+              "name": "Modeling",
+              "emoji": "🗿"
+            },
+            {
+              "name": "UI",
+              "emoji": "🖼️"
+            },
+            {
+              "name": "Other",
+              "emoji": "❓"
+            },
+            {
+              "name": "Solved",
+              "emoji": "✅",
+              "moderated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "💡 FEEDBACK & SUPPORT",
+      "channels": [
+        {
+          "name": "suggestions",
+          "type": "forum",
+          "topic": "Suggest ideas for the community or our games. One idea per post!",
+          "tags": [
+            {
+              "name": "Community",
+              "emoji": "💬"
+            },
+            {
+              "name": "Discord",
+              "emoji": "🤖"
+            },
+            {
+              "name": "Game",
+              "emoji": "🎮"
+            },
+            {
+              "name": "Planned",
+              "emoji": "🛠️",
+              "moderated": true
+            },
+            {
+              "name": "Accepted",
+              "emoji": "✅",
+              "moderated": true
+            },
+            {
+              "name": "Denied",
+              "emoji": "❌",
+              "moderated": true
+            }
+          ],
+          "defaultReaction": "👍"
+        },
+        {
+          "name": "support-info",
+          "topic": "How to get help",
+          "permissions": {
+            "@everyone": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "help",
+          "type": "forum",
+          "topic": "Need help from staff? Open a post here. Please don't DM staff.",
+          "tags": [
+            {
+              "name": "Question",
+              "emoji": "❓"
+            },
+            {
+              "name": "Report a Player",
+              "emoji": "🚩"
+            },
+            {
+              "name": "Appeal",
+              "emoji": "⚖️"
+            },
+            {
+              "name": "Resolved",
+              "emoji": "✅",
+              "moderated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🔊 VOICE",
+      "channels": [
+        {
+          "name": "🎤 Community Stage",
+          "type": "stage"
+        },
+        {
+          "name": "🔊 General",
+          "type": "voice"
+        },
+        {
+          "name": "🎮 Gaming 1",
+          "type": "voice",
+          "userLimit": 10
+        },
+        {
+          "name": "🎮 Gaming 2",
+          "type": "voice",
+          "userLimit": 10
+        },
+        {
+          "name": "🎵 Music",
+          "type": "voice"
+        },
+        {
+          "name": "💤 AFK",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "🧑‍💻 DEV TEAM",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        "Lead Developer": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Developer": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Builder": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Scripter": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Modeler": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "UI Designer": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Animator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "dev-announcements",
+          "topic": "Studio-wide dev news",
+          "permissions": {
+            "Builder": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Scripter": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Modeler": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "UI Designer": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Animator": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Developer": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "dev-chat",
+          "topic": "Team chat"
+        },
+        {
+          "name": "dev-progress",
+          "topic": "Post what you worked on today"
+        },
+        {
+          "name": "dev-resources",
+          "topic": "Docs, assets, style guides, links"
+        },
+        {
+          "name": "🛠️ Dev Meeting",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "🛡️ STAFF",
+      "permissions": {
+        "@everyone": {
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        "Head Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Trial Moderator": {
+          "allow": [
+            "ViewChannel"
+          ]
+        },
+        "Community Manager": {
+          "allow": [
+            "ViewChannel"
+          ]
+        }
+      },
+      "channels": [
+        {
+          "name": "staff-announcements",
+          "topic": "Important info for all staff",
+          "permissions": {
+            "Moderator": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Trial Moderator": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            },
+            "Community Manager": {
+              "deny": [
+                "SendMessages",
+                "CreatePublicThreads",
+                "CreatePrivateThreads",
+                "SendMessagesInThreads",
+                "AddReactions"
+              ]
+            }
+          }
+        },
+        {
+          "name": "staff-chat",
+          "topic": "Staff discussion"
+        },
+        {
+          "name": "staff-commands",
+          "topic": "Moderation bot commands"
+        },
+        {
+          "name": "mod-log",
+          "topic": "Automatic logs: joins, leaves, deletes, bans, AutoMod alerts"
+        },
+        {
+          "name": "mod-updates",
+          "topic": "Discord community updates (required for Community servers)"
+        },
+        {
+          "name": "🛡️ Staff Meeting",
+          "type": "voice"
+        }
+      ]
+    }
+  ],
+  "welcomeScreen": {
+    "description": "The official home of MONOLITH CREATIONS — the studio behind Balloon Pump 🎈",
+    "channels": [
+      {
+        "channel": "rules",
+        "description": "Read the rules",
+        "emoji": "📜"
+      },
+      {
+        "channel": "verify",
+        "description": "Verify to unlock the server",
+        "emoji": "✅"
+      },
+      {
+        "channel": "announcements",
+        "description": "Latest news",
+        "emoji": "📢"
+      },
+      {
+        "channel": "our-games",
+        "description": "Play our games",
+        "emoji": "🎈"
+      },
+      {
+        "channel": "general",
+        "description": "Chat with the community",
+        "emoji": "💬"
+      }
+    ]
+  },
+  "automod": [
+    {
+      "name": "Block slurs & sexual content",
+      "trigger": "KeywordPreset",
+      "metadata": {
+        "presets": [
+          "Profanity",
+          "SexualContent",
+          "Slurs"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Please keep chat friendly — that message was blocked."
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Executive",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator",
+        "Community Manager"
+      ]
+    },
+    {
+      "name": "Scam & free Robux links",
+      "trigger": "Keyword",
+      "metadata": {
+        "keywords": [
+          "free robux",
+          "*robux generator*",
+          "robux hack*",
+          "*freerobux*",
+          "free nitro",
+          "*nitro giveaway*",
+          "*grabify*",
+          "*iplogger*",
+          "*rbxflip*",
+          "*bloxflip*"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Scam / fake-Robux content is not allowed."
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        },
+        {
+          "type": "Timeout",
+          "seconds": 600
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Executive",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator",
+        "Community Manager"
+      ]
+    },
+    {
+      "name": "Discord invite links",
+      "trigger": "Keyword",
+      "metadata": {
+        "regex": [
+          "discord(?:\\.gg|(?:app)?\\.com/invite)/[a-zA-Z0-9-]+"
+        ]
+      },
+      "actions": [
+        {
+          "type": "BlockMessage",
+          "message": "Posting server invites isn't allowed here."
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Executive",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator",
+        "Community Manager",
+        "Partner"
+      ]
+    },
+    {
+      "name": "Mention spam",
+      "trigger": "MentionSpam",
+      "metadata": {
+        "mentionLimit": 6,
+        "raidProtection": true
+      },
+      "actions": [
+        {
+          "type": "BlockMessage"
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        },
+        {
+          "type": "Timeout",
+          "seconds": 600
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Executive",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator",
+        "Community Manager"
+      ]
+    },
+    {
+      "name": "Spam filter",
+      "trigger": "Spam",
+      "actions": [
+        {
+          "type": "BlockMessage"
+        },
+        {
+          "type": "SendAlertMessage",
+          "channel": "mod-log"
+        }
+      ],
+      "exemptRoles": [
+        "Founder",
+        "Executive",
+        "Head Moderator",
+        "Moderator",
+        "Trial Moderator",
+        "Community Manager"
+      ]
+    }
+  ],
+  "bot": {
+    "welcome": {
+      "enabled": true,
+      "channel": "welcome",
+      "embed": true,
+      "color": "#8B5CF6",
+      "title": "Welcome to MONOLITH CREATIONS! 🎉",
+      "message": "Hey {user}, welcome to **{server}**! You're member **#{count}**.\n\n📜 Read {{channel:rules}}\n✅ Verify in {{channel:verify}}\n🎈 Check out {{channel:our-games}}"
+    },
+    "goodbye": {
+      "enabled": false,
+      "channel": "mod-log",
+      "message": "**{username}** left the server."
+    },
+    "autoRoles": [],
+    "logChannel": "mod-log"
+  },
+  "messages": [
+    {
+      "key": "welcome",
+      "channel": "welcome",
+      "embeds": [
+        {
+          "title": "Welcome to MONOLITH CREATIONS",
+          "color": "#8B5CF6",
+          "description": "We're **MONOLITH CREATIONS**, an independent Roblox studio. This is our official community — hang out, follow development, share your own creations and play our games with us.\n\n**Get started**\n1️⃣ Read the {{channel:rules}}\n2️⃣ Verify in {{channel:verify}}\n3️⃣ Pick your pings in {{channel:get-roles}}\n4️⃣ Say hi in {{channel:general}} 👋",
+          "fields": [
+            {
+              "name": "🎈 Our current game",
+              "value": "**Balloon Pump** — see {{channel:our-games}}",
+              "inline": true
+            },
+            {
+              "name": "❓ Questions?",
+              "value": "Check {{channel:faq}} or open a post in {{channel:help}}",
+              "inline": true
+            }
+          ],
+          "footer": {
+            "text": "MONOLITH CREATIONS"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Roblox Group",
+          "emoji": "👥",
+          "url": "{{env.ROBLOX_GROUP_URL}}"
+        },
+        {
+          "label": "Play Balloon Pump",
+          "emoji": "🎈",
+          "url": "{{env.BALLOON_PUMP_URL}}"
+        },
+        {
+          "label": "Balloon Pump Discord",
+          "emoji": "💬",
+          "url": "{{env.GAME_DISCORD_INVITE}}"
+        }
+      ]
+    },
+    {
+      "key": "rules",
+      "channel": "rules",
+      "embeds": [
+        {
+          "title": "📜 Server Rules",
+          "color": "#8B5CF6",
+          "description": "**1. Be respectful.** No harassment, hate speech, discrimination, bullying or drama.\n\n**2. Keep it appropriate.** This is an all-ages Roblox community — no NSFW, gore or edgy content, including in names and avatars.\n\n**3. No spam.** No message spam, mass pings, walls of text or excessive caps/emoji.\n\n**4. No scams or advertising.** No fake Robux/Nitro links, account trading, begging or self-promo outside the right channels. Don't DM-advertise members.\n\n**5. No exploiting.** Don't share or discuss exploits, cheats or executors. Report them privately to staff.\n\n**6. Protect your privacy.** Never share personal info (yours or anyone else's). Staff will **never** ask for your password.\n\n**7. Use the right channels** and keep conversations on topic.\n\n**8. Listen to staff.** If you disagree with a decision, open a post in {{channel:help}} — don't argue in chat.\n\n**9. Follow the Discord ToS and Roblox Community Standards.**",
+          "footer": {
+            "text": "Breaking the rules can lead to a warning, timeout, kick or ban — at staff discretion."
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Discord Terms",
+          "url": "https://discord.com/terms"
+        },
+        {
+          "label": "Roblox Community Standards",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/203313410"
+        }
+      ]
+    },
+    {
+      "key": "verify",
+      "channel": "verify",
+      "embeds": [
+        {
+          "title": "✅ Verify",
+          "color": "#57F287",
+          "description": "Press **Verify** below to confirm you've read the {{channel:rules}} and unlock the rest of the server."
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Verify",
+          "emoji": "✅",
+          "style": "Success",
+          "role": "Member",
+          "mode": "add"
+        }
+      ]
+    },
+    {
+      "key": "roles",
+      "channel": "get-roles",
+      "embeds": [
+        {
+          "title": "🔔 Notification Roles",
+          "color": "#8B5CF6",
+          "description": "Click a button to get (or remove) a ping role.\n\n📢 **Announcements** — big studio news\n🎈 **Game Updates** — new updates for our games\n🎉 **Events** — game nights, contests & stages\n🎁 **Giveaways** — Robux, game passes & more\n👀 **Sneak Peeks** — early looks at what we're making"
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Announcements",
+          "emoji": "📢",
+          "role": "📢 Announcements Ping"
+        },
+        {
+          "label": "Game Updates",
+          "emoji": "🎈",
+          "role": "🎈 Game Updates Ping"
+        },
+        {
+          "label": "Events",
+          "emoji": "🎉",
+          "role": "🎉 Events Ping"
+        },
+        {
+          "label": "Giveaways",
+          "emoji": "🎁",
+          "role": "🎁 Giveaways Ping"
+        },
+        {
+          "label": "Sneak Peeks",
+          "emoji": "👀",
+          "role": "👀 Sneak Peeks Ping"
+        }
+      ]
+    },
+    {
+      "key": "faq",
+      "channel": "faq",
+      "embeds": [
+        {
+          "title": "❓ Frequently Asked Questions",
+          "color": "#8B5CF6",
+          "fields": [
+            {
+              "name": "What is MONOLITH CREATIONS?",
+              "value": "An independent Roblox game studio. Our current game is **Balloon Pump** 🎈"
+            },
+            {
+              "name": "Where do I report bugs in Balloon Pump?",
+              "value": "In the Balloon Pump Discord server — it has dedicated bug-report and suggestion forums."
+            },
+            {
+              "name": "How do I join the dev team?",
+              "value": "Watch {{channel:announcements}} — we post applications there when we're hiring."
+            },
+            {
+              "name": "How do I become a Content Creator / Partner?",
+              "value": "Open a post in {{channel:help}} with links to your channel or server."
+            },
+            {
+              "name": "I was punished unfairly. What now?",
+              "value": "Open an **Appeal** post in {{channel:help}}. Be honest and polite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "games",
+      "channel": "our-games",
+      "embeds": [
+        {
+          "title": "🎈 Balloon Pump",
+          "color": "#FF4D6D",
+          "description": "Pump, pop and progress! Our current Roblox game.\n\n• Updates are posted in {{channel:game-updates}}\n• Bug reports & suggestions go in the Balloon Pump Discord server",
+          "footer": {
+            "text": "More games coming soon…"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Play on Roblox",
+          "emoji": "🎮",
+          "url": "{{env.BALLOON_PUMP_URL}}"
+        },
+        {
+          "label": "Balloon Pump Discord",
+          "emoji": "💬",
+          "url": "{{env.GAME_DISCORD_INVITE}}"
+        }
+      ]
+    },
+    {
+      "key": "support",
+      "channel": "support-info",
+      "embeds": [
+        {
+          "title": "🆘 Getting Help",
+          "color": "#8B5CF6",
+          "description": "Open a new post in {{channel:help}} and choose a tag:\n\n❓ **Question** — general questions\n🚩 **Report a Player** — include their username and proof (screenshots / video)\n⚖️ **Appeal** — appeal a warning or timeout\n\nPlease **don't DM staff** — posts let the whole team help you faster."
+        }
+      ]
+    }
+  ]
+}
