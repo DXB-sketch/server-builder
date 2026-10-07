@@ -183,13 +183,44 @@ Templates are plain JSON in `templates/`. Edit them in the panel (**Templates** 
 
 ---
 
-## 5. Safety
+## 5. Running it 24/7 on an Ubuntu server
+
+The included installer sets the bot up as a **systemd service**. It starts on boot, restarts itself within 5 seconds if it crashes, and keeps logs in the system journal.
+
+```bash
+# on the server, as your normal user (not root)
+git clone https://github.com/DXB-sketch/server-builder.git
+cd server-builder
+sudo ./deploy/install-ubuntu.sh     # installs Node.js if needed + the service
+nano .env                           # paste DISCORD_TOKEN, COMMUNITY_GUILD_ID, GAME_GUILD_ID
+sudo systemctl restart monolith-bot
+```
+
+| Task | Command |
+|---|---|
+| Is it running? | `sudo systemctl status monolith-bot` |
+| Live logs | `sudo journalctl -u monolith-bot -f` |
+| Restart (after editing `.env` or templates) | `sudo systemctl restart monolith-bot` |
+| Stop / start | `sudo systemctl stop monolith-bot` / `start` |
+| Update to the latest code | `./deploy/update.sh` |
+
+**Opening the control panel.** The panel only listens on the server itself (`127.0.0.1`), so it isn't exposed to the internet. Reach it from your PC through an SSH tunnel:
+
+```bash
+ssh -L 3000:localhost:3000 youruser@your-server-ip
+```
+
+Leave that window open and browse to **http://localhost:3000** on your PC. This works the same from Windows (PowerShell has `ssh` built in).
+
+> Don't open port 3000 to the internet. The panel has full control of your servers and uses plain HTTP. If you really need access without SSH, use a private network such as [Tailscale](https://tailscale.com). Set `PANEL_HOST=0.0.0.0` and a strong `PANEL_PASSWORD`, and only allow the Tailscale interface through the firewall.
+
+## 6. Safety
 
 - Your token stays in `.env` on your computer. `.env` is in `.gitignore`, so never commit it or send it to anyone.
 - The panel only listens on `127.0.0.1` (your computer). To open it from another device, set `PANEL_HOST=0.0.0.0` **and** a `PANEL_PASSWORD`.
 - Dangerous actions (wipe, delete, ban, prune, leave) always ask for confirmation.
 
-## 6. Troubleshooting
+## 7. Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -211,5 +242,6 @@ src/panel/server.js   local web server, auth, live log stream
 src/panel/api.js      every panel action → Discord
 public/               the control panel (plain HTML/CSS/JS, no build step)
 templates/            monolith-community.json, balloon-pump.json
+deploy/               Ubuntu systemd installer + update script
 data/config.json      runtime settings saved by the panel (created automatically)
 ```

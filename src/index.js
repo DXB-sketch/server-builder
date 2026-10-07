@@ -16,3 +16,12 @@ process.on('unhandledRejection', (e) => log.error('Unhandled error:', e?.message
 
 panel.start();
 bot.start();
+
+// Clean shutdown (systemctl stop / restart, Ctrl+C): disconnect from Discord first.
+for (const sig of ['SIGINT', 'SIGTERM']) {
+  process.once(sig, () => {
+    log.info(`${sig} received — shutting down`);
+    bot.state.client?.destroy();
+    setTimeout(() => process.exit(0), 300);
+  });
+}
